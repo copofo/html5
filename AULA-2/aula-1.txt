@@ -1,0 +1,39 @@
+Aula 1
+    Qual é o formato da água?
+    - R: Vai depender do formato do recipiente
+
+
+    flex-contaiver é quem leva a configuração flexbox - pai
+    flex-items
+
+    --------
+
+    - flexbox
+
+
+    - Direção e Eixos
+
+flex-direction: row;
+- Posicionando os items em linha, deitado. Os items do flex-container serão posicionados em linha da direita para a esquerda que é o padrão.
+
+    
+flex-direction: row-reverse;
+- Posicionando os items em linha, deitado. Neste caso os items serão posicionados em linha da esquerda para a direita.
+
+
+
+flex-direction: column;
+- OS ELEMENTOS SÃO POSICIONADOS EM PÉ (COLUNA) DE CIMA PARA BAIXO
+
+flex-direction: column-RESERVE;
+COLUNA DE BAIXO PARA CIMA
+
+MAIN-AXIS - EIXO PRINCIPAL
+MAIN-START - É O SENTIDO ONDE INICIA O EIXO
+MAIN-END - É ONDE TERMINA O EIXO
+
+
+CROSS-AXIS - EIXO TRANSVERSAL
+CROSS-START
+CROSS-END
+
