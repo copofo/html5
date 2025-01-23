@@ -1,25 +1,41 @@
 @charset "UFT-8";
 
 body{
-    width: calc(100% - 10px);
+    width: 100%;
   
 }
 header, header > nav {
     flex-flow: column nowrap;
+    
+}
+
+header > nav {
+    
+    width: 95%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+header{
+    
+    width: 100%;
 }
 
 header > h1 {
     flex-basis: 50px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.322);
 }
 
 header nav a {
-    width: 90%;
+    width: 90vw;
+   
 }
 
 .center{
     display: flex;
-    width: 100%;
+   width: 100%;
     justify-content: center;
-
+   
 }
 
