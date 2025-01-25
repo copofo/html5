@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adiconar Transação</title>
+
+    <style>
+        table {
+            border: 2px solid black;
+        }
+
+        caption {
+            caption-side: top;
+            padding: 10px;
+            font-weight: bold;
+        }
+
+        thead,
+        tfoot {
+            background-color: lightblue;
+        }
+
+        th,
+        td {
+            border: 1px solid rgb(0, 46, 0);
+            text-align: center;
+        }
+
+
+        tbody > tr:nth-of-type(even) {
+            background-color: rgba(211, 211, 211, 0.527);
+        }
+
+        tfoot th {
+            text-align: center;
+        }
+
+
+        tfoot td {
+            font-weight: bolder;
+        }
+
+        #divOpc{
+            display: flex;
+            border: solid black;
+            flex-flow: column wrap;
+            position: fixed;
+            height: 100px;
+            
+            right: 50px;
+            top: 120px;
+            
+
+
+            
+        }
+
+   
+    </style>
+</head>
+
+<body>
+    <main>
+        <table>
+
+            <caption>
+                AÇÕES
+            </caption>
+
+            <thead>
+
+                <tr>
+                    <th scope="col" id="col1"></th>
+                    <th scope="col" id="col1">A</th>
+                    <th scope="col" id="col2">B</th>
+                    <th scope="col" id="col3">C</th>
+                    <th scope="col" id="col4">D</th>
+                    <th scope="col" id="col5">E</th>
+                    <th scope="col" id="col6">F</th>
+                    <th scope="col" id="col7">G</th>
+                    <th scope="col" id="col8">H</th>
+                    <th scope="col" id="col9">I</th>
+                    <th></th>
+                </tr>
+
+
+                <tr>
+                    <th scope="col" id="col1">1</th>
+                    <th scope="col" id="col1">ATIVO</th>
+                    <th scope="col" id="col2">QTD</th>
+                    <th scope="col" id="col3">PREÇO MÉDIO</th>
+                    <th scope="col" id="col4">VALOR INVESTIDO</th>
+                    <th scope="col" id="col5">PREÇO ATUAL</th>
+                    <th scope="col" id="col6">SALDO</th>
+                    <th scope="col" id="col7">% ATUAL </th>
+                    <th scope="col" id="col8">% IDEAL </th>
+                    <th scope="col" id="col9">VARIAÇÃO</th>
+                    <th></th>
+                </tr>
+            </thead>
+
+            <!--
+            
+            LEVE3	1	26,92	26,92	27,57	27,57	2,76%	2,50%	2,41%
+
+            GRND3	5	5,38	26,9	5,56	27,8	2,78%	2,50%	3,35%
+
+            SANB3	2	11,86	23,72	11,75	23,5	2,35%	2,50%	-0,93%
+
+            EGIE3	1	35,49	35,49	35,17	35,17	3,52%	2,50%	-0,90%
+
+            TAEE3	2	10,86	21,72	10,72	21,44	2,15%	2,50%	-1,29%
+
+            CPFE3	1	33,2	33,2	32,96	32,96	3,30%	2,50%	-0,72%
+            
+            BBAS3	1	25,58	25,58	26,59	26,59	2,66%	2,50%	3,95%
+
+            ITSA3	2	9,26	18,52	9,3	18,6	1,86%	2,50%	0,43%
+
+            BBSE3	1	37,75	37,75	37,83	37,83	3,79%	2,50%	0,21%
+
+            CMIG3	1	14,41	14,41	14,61	14,61	1,46%	2,50%	1,39%
+            
+            
+            
+            
+            
+            -->
+
+            <tbody id="body">
+
+                <!--linha 1-->
+                <tr>
+                    <th scope="col" id="col1">2</th>
+                    <td scope="row">NOME DO ATIVO</td>
+                    <td scope="row">QTD DO ATIVO</td>
+                    <td scope="row">dado preço medio</td>
+                    <td scope="row">dado valor investido</td>
+
+                    <td scope="row">dado preço atual</td>
+                    <td scope="row">dado saldo</td>
+                    <td scope="row">dado % atual</td>
+                    <td scope="row">dado % Ideal</td>
+                    <td scope="row">dado Variação</td>
+
+                    
+                    <td>
+                        <button id="opc">...</button>
+                        
+                        <div 
+                        
+                        style="display: flex;" id="divOpc"
+                        
+                        >
+                            
+                            
+                            <div><button>ediar</button></div>
+
+
+                            <div><button>excluir</button></div>
+
+                        </div>
+
+                        
+                    </td>
+                </tr>
+
+                 <!--linha 2-->
+                <tr>
+                    <th scope="col" id="col1">3</th>
+                    <td scope="row">NOME DO ATIVO</td>
+                    <td scope="row">QTD DO ATIVO</td>
+                    <td scope="row">dado 1</td>
+                    <td scope="row">dado 2</td>
+                    <td scope="row">dado 1</td>
+                    <td scope="row">dado 2</td>
+                    <td scope="row">dado 1</td>
+                    <td scope="row">dado 2</td>
+                    <td scope="row">dado 2</td>
+                    <td><button>...</button></td>
+                </tr>
+
+                 <!--linha 3-->
+                <tr>
+                    <th scope="col" id="col1">4</th>
+                    <td scope="row">NOME DO ATIVO</td>
+                    <td scope="row">QTD DO ATIVO</td>
+                    <td scope="row">dado 1</td>
+                    <td scope="row">dado 2</td>
+                    <td scope="row">dado 1</td>
+                    <td scope="row">dado 2</td>
+                    <td scope="row">dado 1</td>
+                    <td scope="row">dado 2</td>
+                    <td scope="row">dado 2</td>
+                    <td><button>...</button></td>
+                </tr>
+
+                 <!--linha 4-->
+                <tr>
+                    <th scope="col" id="col1">5</th>
+                    <td scope="row">NOME DO ATIVO</td>
+                    <td scope="row">QTD DO ATIVO</td>
+                    <td scope="row">dado 1</td>
+                    <td scope="row">dado 2</td>
+                    <td scope="row">dado 1</td>
+                    <td scope="row">dado 2</td>
+                    <td scope="row">dado 1</td>
+                    <td scope="row">dado 2</td>
+                    <td scope="row">dado 2</td>
+                    <td><button>...</button></td>
+                </tr>
+                
+                 <!--linha 5-->
+                <tr>
+                    <th scope="col" id="col1">6</th>
+                    <td scope="row">NOME DO ATIVO</td>
+                    <td scope="row">QTD DO ATIVO</td>
+                    <td scope="row">dado 1</td>
+                    <td scope="row">dado 2</td>
+                    <td scope="row">dado 1</td>
+                    <td scope="row">dado 2</td>
+                    <td scope="row">dado 1</td>
+                    <td scope="row">dado 2</td>
+                    <td scope="row">dado 2</td>
+                    <td><button>...</button></td>
+                </tr>
+
+                
+              
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <th scope="row" colspan="2">TOTAL INVESTIDO</th>
+                    <td>R$</td>
+
+                    <th scope="row" colspan="2">SALDO TOTAL</th>
+                    <td>R$</td>
+
+                    <th scope="row" colspan="3">VARIAÇÃO TOTAL</th>
+                    <td>%</td>
+
+                    <th></th>
+                   
+                </tr>
+            </tfoot>
+
+
+        </table>
+    </main>
+
+    <script>
+        const g = (tag) => document.getElementById(tag)
+
+        const btnOpc = g('opc')
+        btnOpc.addEventListener('click', ()=>{
+           g("divOpc").style.display = 'block'
+
+        })
+    </script>
+</body>
+
+</html>
